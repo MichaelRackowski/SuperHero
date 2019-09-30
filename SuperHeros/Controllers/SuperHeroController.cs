@@ -24,7 +24,10 @@ namespace SuperHeros.Controllers
         // GET: SuperHero/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+
+            var SuperHeroDb = context.Heros.Where(s => s.Id == id).FirstOrDefault();
+
+            return View(SuperHeroDb);
         }
 
 
