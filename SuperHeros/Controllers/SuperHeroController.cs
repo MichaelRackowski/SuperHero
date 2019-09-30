@@ -64,7 +64,7 @@ namespace SuperHeros.Controllers
             catch (Exception)
             {
 
-                throw;
+                return View();
             }
 
             
